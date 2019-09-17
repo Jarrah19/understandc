@@ -1,2 +1,2 @@
-understand c init
-edit from web
+#ch01 
+初识C语言
