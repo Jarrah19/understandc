@@ -11,17 +11,17 @@ int main(void)
         printf("\n请输入：1.剪刀 2.石头 3.布\n\n");
         scanf("%d", &input);
 
-        if (input > 3 || input < 1) {
-            puts("错误的输入");
-        }
+        while (getchar() != '\n');
 
-        else switch (input) {
-            case 1: puts("\n您输入的是：剪刀\n"); break;
+        switch (input) {
+        case 1: puts("\n您输入的是：剪刀\n"); break;
 
-            case 2: puts("\n您输入的是：石头\n"); break;
+        case 2: puts("\n您输入的是：石头\n"); break;
 
-            case 3: puts("\n您输入的是：布\n"); break;
-            };
+        case 3: puts("\n您输入的是：布\n"); break;
+
+        default: puts("\n错误的输入\n"); continue;
+        };
 
         switch (computer + 1) {
         case 1: puts("计算机的出拳是：剪刀\n"); break;

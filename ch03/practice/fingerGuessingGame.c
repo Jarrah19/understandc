@@ -8,14 +8,16 @@ int main(void)
 
     do {
         int input;
-        printf("\n请输入：1.剪刀 2.石头 3.布\n");
+        printf("\n请输入：1.剪刀 2.石头 3.布\n\n");
         scanf("%d", &input);
 
         if (input > 3 || input < 1) {
-            puts("错误的输入");
+            puts("\n错误的输入\n");
         }
 
-        else if (input == 1) {
+        while (getchar() != '\n');
+
+        if (input == 1) {
 
             switch (rand() % 3) {
             case 0: puts("\n您输入的是：剪刀\n\n计算机的出拳是：布\n\n获胜方为：您\n\n"); break;
