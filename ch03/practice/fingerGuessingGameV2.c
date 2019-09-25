@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void)
 
 {
     int repeat = 9;
+    srand((unsigned)time(NULL));
+
 
     do {
         int input, computer = (rand() % 3);

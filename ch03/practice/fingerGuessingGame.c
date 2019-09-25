@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void)
 
 {
     int repeat = 9;
-
+    srand((unsigned)time(NULL));
+   
     do {
         int input;
         printf("\n请输入：1.剪刀 2.石头 3.布\n\n");
