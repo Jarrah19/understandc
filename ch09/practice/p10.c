@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 void del_digit(char s[]) {
-    int wholeSize = 0, digitSize = 0;
+    int wholeSize = 0;
 
-    while (s[wholeSize] != '\0') {
+    while (s[wholeSize]) {
         wholeSize++;
     }
 
